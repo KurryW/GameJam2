@@ -7,7 +7,10 @@ using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour
 {
-	[SerializeField] WheelCollider frontRight;
+    public float myGravity;
+    private Rigidbody myRigidbody;
+
+    [SerializeField] WheelCollider frontRight;
 	[SerializeField] WheelCollider frontLeft;
 	[SerializeField] WheelCollider backRight;
 	[SerializeField] WheelCollider backLeft;
@@ -26,13 +29,14 @@ public class Player : MonoBehaviour
 
     void Start()
 	{
-		//anim = gameObject.GetComponentInChildren<Animator>();
-	}
+        //anim = gameObject.GetComponentInChildren<Animator>();
+        myRigidbody = GetComponent<Rigidbody>();
+    }
 
 	void FixedUpdate()
 	{
-
-		currentAcceleration = acceleration * Input.GetAxis("Vertical");
+        myRigidbody.AddRelativeForce(Vector3.down * myGravity);
+        currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
 		//if (Input.GetKey(KeyCode.W))
 		//{
@@ -54,11 +58,9 @@ public class Player : MonoBehaviour
 		else
 		
 			currentBreakforce = 0f;
-			//anim.SetInteger("JumpPar", 0);
-		
+        //anim.SetInteger("JumpPar", 0);
 
-
-		frontRight.motorTorque = currentAcceleration;
+        frontRight.motorTorque = currentAcceleration;
 		frontLeft.motorTorque = currentAcceleration;
 
 		frontRight.brakeTorque = currentBreakforce;
