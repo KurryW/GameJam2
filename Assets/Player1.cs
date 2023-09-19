@@ -68,17 +68,18 @@ public class Player1 : MonoBehaviour {
 
 		//if (isGrounded)
 		//{
-		//	if (Input.GetKeyDown(KeyCode.Space))
-		//	{
-		//		yVelocity = jumpHeight;
-		//		beginJumpTime = Time.time;
-		//		anim.SetInteger("JumpPar", 1);
-		//	}
+		//if (Input.GetKeyDown(KeyCode.Space))
+		//{
+		//	//yVelocity = jumpHeight;
+		//	//beginJumpTime = Time.time;
+		//	//anim.SetInteger("JumpPar", 1);
 		//}
-  //      else
-  //      {
-  //          yVelocity -= gravity;
-  //          anim.SetInteger("JumpPar", 0);
+		////}
+		//else
+		//{
+			
+		//	//anim.SetInteger("JumpPar", 0);
+		//}
         
 
 
@@ -91,7 +92,7 @@ public class Player1 : MonoBehaviour {
   //      }
 
 
-		
+		yVelocity -= gravity;
 		velocity.y = yVelocity;
 		controller.Move(velocity * Time.deltaTime);
 
