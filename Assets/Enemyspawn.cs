@@ -6,82 +6,43 @@ using UnityEngine.SceneManagement;
 
 public class Enemyspawn : MonoBehaviour
 {
-
-    //public GameObject[] SpawnLocations;
-    //public GameObject[] objectToSpawn;
-    
     [SerializeField] private string sceneName;
 
+    public GameObject[] enemies;
+    private int enemyIndex = 0;
+
     public GameObject SpacebarButton;
-    public GameObject SpawnEnemy;
-    public GameObject SpawnEnemy1;
-    public GameObject SpawnEnemy2;
-    public GameObject SpawnEnemy3;
-    public GameObject SpawnEnemy4;
 
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        //objectToSpawn = new GameObject[SpawnLocations.Length];
-        
+        enemies[enemyIndex].SetActive(true);
     }
 
-    void OnTriggerEnter(Collider other)
+    public void ActivateSpacebarButton()
     {
-
-        Debug.Log("ik ben binnen");
-
-        if (other.gameObject.name == "Player")
-        {
-            SpacebarButton.SetActive(true);
-            
-            if (Input.GetKey(KeyCode.Space))
-            {
-                gameObject.SetActive(false);
-            }
-        }
-
-        
-        
+        SpacebarButton.SetActive(true);
     }
 
-    void OnTriggerExit(Collider other)
+    public void DeactivateSpacebarButton()
     {
-        if (other.gameObject.name == "Player")
-        {
-            SpacebarButton.SetActive(false);
-
-        }
-
+        SpacebarButton.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnEnemyDeath()
     {
-        if (SpawnEnemy == false)
-        {
-            SpawnEnemy1.SetActive(true);
-        }
+        enemies[enemyIndex].SetActive(false);
+        enemyIndex++;
 
-        if (SpawnEnemy1 == false)
-        {
-            SpawnEnemy2.SetActive(true);
-        }
-        
-        if (SpawnEnemy2 == false)
-        {
-            SpawnEnemy3.SetActive(true);
-        }
-        
-        if (SpawnEnemy3 == false)
-        {
-            SpawnEnemy4.SetActive(true);
-        }
-
-        if (SpawnEnemy4 == false)
+        if (enemyIndex >= enemies.Length)
         {
             SceneManager.LoadScene(sceneName);
         }
+        else
+        {
+            enemies[enemyIndex].SetActive(true);
+            DeactivateSpacebarButton();
+        }
     }
+    
 }

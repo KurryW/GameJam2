@@ -14850,25 +14850,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
   m_PrefabInstance: {fileID: 6057041972189899160}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &536006471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536006468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Victory
-  SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!1001 &536286024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21328,7 +21309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21374,6 +21355,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316156677819578055, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
+      propertyPath: enemyspawn
+      value: 
+      objectReference: {fileID: 2048810194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
 --- !u!1 &724399449 stripped
@@ -21381,25 +21366,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
   m_PrefabInstance: {fileID: 724399448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &724399452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724399449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Victory
-  SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!1001 &725166595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26395,7 +26361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26441,6 +26407,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316156677819578055, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
+      propertyPath: enemyspawn
+      value: 
+      objectReference: {fileID: 2048810194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
 --- !u!1 &884512944 stripped
@@ -26448,25 +26418,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
   m_PrefabInstance: {fileID: 884512943}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &884512947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884512944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Victory
-  SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!1 &884959086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ee6d569ec3227e40888e8151b331e0f, type: 3}
@@ -34093,7 +34044,7 @@ Transform:
   - {fileID: 1946486050}
   - {fileID: 1507389659}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148115722 stripped
 GameObject:
@@ -49946,7 +49897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49992,6 +49943,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316156677819578055, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
+      propertyPath: enemyspawn
+      value: 
+      objectReference: {fileID: 2048810194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
 --- !u!1 &1500331682 stripped
@@ -49999,25 +49954,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
   m_PrefabInstance: {fileID: 1500331681}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1500331685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500331682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Victory
-  SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!1001 &1501078022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61843,7 +61779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61889,6 +61825,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316156677819578055, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
+      propertyPath: enemyspawn
+      value: 
+      objectReference: {fileID: 2048810194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
 --- !u!1 &1831444320 stripped
@@ -61896,25 +61836,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
   m_PrefabInstance: {fileID: 1831444319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1831444323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831444320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Victory
-  SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!1 &1832285754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
@@ -76077,7 +75998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2048810194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76085,18 +76006,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048810193}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c42a7abba1ffe6c45a1e9b10dbb0b1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Victory
+  enemies:
+  - {fileID: 536006468}
+  - {fileID: 1831444320}
+  - {fileID: 724399449}
+  - {fileID: 1500331682}
+  - {fileID: 884512944}
   SpacebarButton: {fileID: 1444086285}
-  SpawnEnemy: {fileID: 536006468}
-  SpawnEnemy1: {fileID: 1831444320}
-  SpawnEnemy2: {fileID: 724399449}
-  SpawnEnemy3: {fileID: 1500331682}
-  SpawnEnemy4: {fileID: 884512944}
 --- !u!4 &2048810195
 Transform:
   m_ObjectHideFlags: 0
@@ -76110,7 +76032,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2049012517
 PrefabInstance:
@@ -80629,11 +80551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246748, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6057041972524246749, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80679,6 +80601,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316156677819578055, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
+      propertyPath: enemyspawn
+      value: 
+      objectReference: {fileID: 2048810194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 795b6af1676ef97409c67f14f2a652fa, type: 3}
 --- !u!33 &6346620974262489214

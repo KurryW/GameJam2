@@ -4706,6 +4706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6057041972524246749}
   - component: {fileID: 6057041972524246750}
+  - component: {fileID: 7316156677819578055}
   m_Layer: 0
   m_Name: poison enemy
   m_TagString: Untagged
@@ -4753,6 +4754,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 39.76, y: 13.66446, z: 38.57712}
   m_Center: {x: 0, y: -2.8572278, z: -3.83856}
+--- !u!114 &7316156677819578055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057041972524246748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b174af7c520ecf43b7b2e4a719e11e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyspawn: {fileID: 0}
 --- !u!1 &6057041972530446829
 GameObject:
   m_ObjectHideFlags: 0
