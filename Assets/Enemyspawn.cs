@@ -13,6 +13,7 @@ public class Enemyspawn : MonoBehaviour
     [SerializeField] private string sceneName;
 
     public GameObject SpacebarButton;
+    public GameObject SpawnEnemy;
     public GameObject SpawnEnemy1;
     public GameObject SpawnEnemy2;
     public GameObject SpawnEnemy3;
@@ -26,25 +27,44 @@ public class Enemyspawn : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        SpacebarButton.SetActive(true);
-        
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        Debug.Log("ik ben binnen");
+
+        if (other.gameObject.name == "Player")
         {
-            gameObject.SetActive(false);
+            SpacebarButton.SetActive(true);
+            
+            if (Input.GetKey(KeyCode.Space))
+            {
+                gameObject.SetActive(false);
+            }
         }
+
+        
+        
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        SpacebarButton.SetActive(false);
+        if (other.gameObject.name == "Player")
+        {
+            SpacebarButton.SetActive(false);
+
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(SpawnEnemy1 == false)
+        if (SpawnEnemy == false)
+        {
+            SpawnEnemy1.SetActive(true);
+        }
+
+        if (SpawnEnemy1 == false)
         {
             SpawnEnemy2.SetActive(true);
         }
